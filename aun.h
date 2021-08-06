@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* aun.h                  */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 #define AUN_MAX_STATIONS	255
 #define AUN_MAX_BUFFERS	20
