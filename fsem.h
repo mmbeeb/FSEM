@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* fsem.h                 */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 int fsem_open(char *fname, uint32_t loadaddr, uint16_t stn, char *scsiname);
 void fsem_close(void);
