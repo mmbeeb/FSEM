@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* ebuf.h                 */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 #define EB_STATE_VOID		0
 #define EB_STATE_LISTENING	1
