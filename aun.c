@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* aun.c                  */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 #include <stdio.h>
 #include <string.h>
