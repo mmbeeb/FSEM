@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* fsem.c                 */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 #include <stdio.h>
 //#include <stdlib.h>
@@ -379,7 +379,6 @@ static void _osword() {
 }
 
 static void _osbyte() {
-	int ox=X;
 	switch (A) {
 		case 0x0d://disable event X
 			keyevent = 0;//assume X=2
