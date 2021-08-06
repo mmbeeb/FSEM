@@ -1,6 +1,6 @@
 /* File Server Emulator   */
 /* main.c                 */
-/* (c) Martin Mather 2021 */
+/* (c) 2021 Martin Mather */
 
 #include <ctype.h>
 #include <stdio.h>
