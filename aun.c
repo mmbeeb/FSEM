@@ -73,10 +73,10 @@ static void _sendack(void) {
 static void _sendmachinetype(void) {
 	//printf("send immediate reply ack\n");
 	rxbuf[0] = AUN_TYPE_IMM_REPLY;//reuse rest of received header
-	rxbuf[1] = 1;//bbc micro
-	rxbuf[2] = 0;
-	rxbuf[3] = 0x60;//nfs x.60
-	rxbuf[4] = 3;//nfs 3.xx
+	rxbuf[8] = 1;//bbc micro
+	rxbuf[9] = 0;
+	rxbuf[10] = 0x60;//nfs x.60
+	rxbuf[11] = 3;//nfs 3.xx
 	if (sendto(mysock, rxbuf, AUN_HDR_SIZE + 4, 0, (struct sockaddr*) &si_other, slen) == -1)
 		die("sendto()");
 }
