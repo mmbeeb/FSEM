@@ -9,8 +9,8 @@
 #include "ebuf.h"
 #include "aun.h"
 
-int ebuf_count;
-struct ebuf_t *ebufs = NULL;
+static int ebuf_count;
+static struct ebuf_t *ebufs = NULL;
  
 void ebuf_open(int max_buffers) {
 	//printf("ebuf_open %d\n", max_buffers);
