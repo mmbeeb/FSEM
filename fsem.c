@@ -29,15 +29,15 @@
 #define PULL STACK(++SP)
 #define _BREAK_ brk = 1
 
-uint8_t MM[MMSIZE], A, X, Y, SP, M;
-uint16_t PC, XPC, L, R;
-int N, V, Z, C, F, brk = 0;
+static uint8_t MM[MMSIZE], A, X, Y, SP, M;
+static uint16_t PC, XPC, L, R;
+static int N, V, Z, C, F, brk = 0;
 
-uint16_t mystn;
-struct ebuf_t *txbuf = NULL;
-FILE *scsi = NULL;
+static uint16_t mystn;
+static struct ebuf_t *txbuf = NULL;
+static FILE *scsi = NULL;
 
-int keyevent = 0;
+static int keyevent = 0;
 #define EVENTV 0x0220
 
 
