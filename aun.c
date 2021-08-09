@@ -17,7 +17,7 @@
 #include "aun.h"
 #include "ebuf.h"
 
-struct aun_t {
+static struct aun_t {
 	uint32_t in_addr;
 	struct sockaddr_in si;
 	uint32_t rxhandle;
@@ -28,10 +28,10 @@ struct aun_t {
 	int txattempt;
 } stations[AUN_MAX_STATIONS], *stnp;
 
-struct sockaddr_in si_me, si_other;
-int mysock, slen = sizeof(si_other), rxlen;
-uint8_t *rxbuf = NULL;
-uint16_t mystn, otherstn;
+static struct sockaddr_in si_me, si_other;
+static int mysock, slen = sizeof(si_other), rxlen;
+static uint8_t *rxbuf = NULL;
+static uint16_t mystn, otherstn;
 
 static void die(char *s) {
 	perror(s);
