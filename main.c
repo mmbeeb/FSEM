@@ -2,6 +2,8 @@
 /* main.c                 */
 /* (c) 2021 Martin Mather */
 
+#define _POSIX_C_SOURCE 1
+
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
