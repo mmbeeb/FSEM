@@ -1,5 +1,5 @@
 # FSEM
-
+[SUPERSEDED BY FSEM2]
 
 * an emulator specifically for the Acorn Level 3 File Server (Version 1.25)
 * for use with BeebEm (Version 4.16)
